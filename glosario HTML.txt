@@ -1,0 +1,932 @@
+Desarrollo web glosario
+HTML
+
+<p>=parrafo 
+<hr>=linea horizontal
+<br>=salto de linea
+
+algunas etiquetas se
+abren y se cierran y 
+otras no 
+/=este signo se usa
+para cerrar
+<head>=parte privada
+del documento
+<body>=es el contenido
+propiamente dicho
+<title>=define titulo
+de nuestra pagina 
+<meta>=añadir info, 
+idioma, codificacion
+doctype=declara el tipo
+de documento
+
+
+Dentro de <body><body/>
+hay dos grupos:
+1. elementos de bloque
+(ocupan el 100% del ancho
+del contenedor, se 
+mostraran uno abajo del otro
+2. elementos de linea: solo
+coupan el ancho que diga
+su contenido y se veran 
+uno al lado del otro
+
+<p>lorem+tab</p>=texto simulado
+<h1><h2><h3> hasta <h6>
+=es para hacer jerarquias
+de texto h1 es lo mas
+importante y h6 lo mas
+chico 
+<strong></strong>=pone
+negrita
+<em> </em>= cursiva
+<p>=parrafo 
+<hr>=linea horizontal
+<br>=salto de linea
+<ol>=lista ordenada (numerica)
+<ul>=lista desordenada (viñeta
+o puntitos)
+<li>=define articulo de lista
+
+ejemplo
+<ul>
+<li>punto1</li>
+<li>punto2</li>
+</ul>
+
+<header>=encabezado
+<nav>=menu
+puedo hacer listas
+dentro de listas con 
+el mismo código
+
+TABLAS
+
+<table>=tabla
+<tr>fila
+<td>columna
+<th>celda de encabezado
+
+atributos
+<border>borde de tabla
+<cellpading>margen interno
+<cellspading>margen exterior
+
+ejemplo
+<table border="2px" cellpadding="50px" cellspacing="20px">
+<tr>
+<th>televisores</th>
+<td>producto1</td>
+<td>producto2</td>
+<td>producto3</td>
+</tr>
+<tr>
+<th>microondas</th>
+<td>producto4</td>
+<td>producto5</td>
+<td>producto6</td>
+</tr>
+</table> 
+
+FORMULARIOS
+etiqueta donde el 
+usuario ingresa o 
+selecciona valores
+
+requiere 3 atributos
+
+<action>procesa datos del formulario
+<method>forma en la que
+va a viajar el formulario
+(get o post)
+<enctype>como se codifican 
+los contenidos
+
+<form>
+<input></input>=control de formulario 
+(lo que queremos que ingrese)
+<input type> acepta valores como checkbox,
+password,email, text, radio,range,color,
+search,file,week,time,data,numbers etc
+ejemplo
+
+<p>aceptas las condiciones?</p>
+<input type=checkbox>
+
+<p>sexo</p>
+<p>hombre</p>
+<input type=radio name=genero>
+<p>mujer</p>
+<input type="radio" name=genero>
+
+<textarea></textarea>=cuadro de info
+
+BOTONES DE FORM
+
+en los botones no se pone "name", sino value,que
+es lo que va dentro
+
+3 tipos (submit,reset,button
+	envia=submit
+	vacia los campos=reset
+	no hace nada
+todos los botones
+son etiqueta de <input>
+con diferente input type
+
+EJEMPLOS
+<input type=submit value=enviar formulario>
+<input type=reset value=borrar formulario>
+
+CONTROLES DE SELECCION
+botones de radio=solo se elije
+1 opcion
+casillas de checkeo=se
+eligen cosas de una lista 
+menu desplegable=solo se elige
+1 opcion
+
+ejemplo boton de radio
+
+<form>
+<div>hombre</div>
+<input type="radio" name="sexo" value="hombre"/>
+<div>hombre</div>
+<input type="radio" name="sexo" value="mujer"/>
+</form>
+
+ejemplo formulario
+<form>
+<p>ingresa nombre</p>
+<input type="text" name="">
+
+<p> ingresa contraseña</p>
+<input type="password" name="">
+
+placeholder= atributo de letras grises
+maxlenght=limita los caracteres
+
+<input type="password" name="contraseña"placeholder=nombre
+
+<text area>placeholder="deja tu comentario"</text area>
+
+LABEL
+define formalmente cada elemento del formulario
+atributos="for" (debe ser igual a "name")
+
+ejemplo
+<form>
+<label for =nombre apellido> nombre: </label>
+<input type=text name=nombre apellido"/>
+</form>
+
+MENU DESPLEGABLE
+<form>
+<select name=talles>
+<option value=L>large</option>
+
+CONJUNTO DE CAMPO
+<fieldset> (hace un recuadro alrededor de algo) y <legend>
+
+ARQUITECTURA DE UN SITIO
+
+ENLACES
+dentro del sitio
+para permitir navegabilidad
+
+<a href=productos.html>productos</a>
+
+<a>=es la etiqueta
+href=es el atributo
+
+Enlaces pueden ser internos o externos
+
+CLASE 3
+
+IMAGENES
+etiqueta <img/>
+atributos: 
+source (src)=ruta
+alt= descripcion  
+en src=puedo poner
+tambien la direccion de una 
+imagen desde google
+otros atributos:
+heigh= cambia altura
+width=ancho
+
+VIDEO
+<video></video>=etiqueta
+<video src=mivideo.mp4controls>
+control es otro atributo
+
+AUDIO
+<audio></audio>
+<audio src=perfect.mp3>
+atributos:
+preload
+controls(play,pause)
+autoplay
+loop
+
+IFRAME
+insertar algo de otro sitio
+por ejemplo de youtube o 
+google maps=compartir o incorporar mapa
+(copio link)
+youtube=compartir,incoporar
+
+CSS
+se crea un archivo en sublime
+y se guarda .css (igual que con 
+html)
+se enlaza al html
+
+FORMA EXTERNA 
+<link rel="stylesheet" href="archivo.css/>"
+
+FORMA INTERNA 
+<style></style>
+
+se copia la ruta de lo que 
+quiero modificar
+
+ejemplo: 
+header nav ul li a {
+color:orange;
+}
+
+atributo CLASS
+selector, para modificar
+solo una cosa dentro de 
+otra
+se cita con un . en css
+
+se pone en el html y se
+especifica en el css
+
+atributo ID
+se usa para nombrar porciones
+de codigo 
+se cita con # en css
+
+ID no se puede repetir
+en dos o mas elementos 
+
+CLASS si se puede
+un elementos puede tener
+varias clases
+
+!important;=corta precedencia
+se escribe despues de css
+
+PROPIEDADES
+basicas de css
+
+p{=selecciono todos los parrafos
+
+color=para ponerle color
+a la fuente 
+se puede poner el numero
+#HEX del color que queremos
+usar
+tambien se puede poner el
+RGB (ej 50,212, 227)
+
+se usa con color picker
+
+CLASE 4
+
+Font-style 
+.normal 
+.italica
+
+Font-weight
+.normal
+.bold
+
+font-size
+.en px (no es responsive)
+.en porcentaje (es responsive)
+
+font-family
+
+.impact {
+font-family:impact, sans serif;
+}
+
+body {
+	font-family: proxima nova;
+}
+
+.titulares {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+
+}
+
+text-align
+
+
+text-transform
+.none
+.uppercase
+.lowercase
+.capitalize
+
+line-height (interlineado)
+.none
+.<numero>
+<longitud>
+<porcentaje>
+
+text-decoration
+none(sacarle subrayado a links)
+underline
+overline
+line-through
+
+letter-spacing
+5px
+1opx
+
+word-spacing
+30px
+10px
+
+list-style-type
+.upper-latin
+.upper-roman
+
+list-style-image
+url a un icono que queremos
+que aparezca en la viñeta
+
+BACKGROUND-COLOR
+nombre de color
+codigo numeral
+RGB
+
+BACKGROUND-IMAGE
+se adjunta con url 
+igual que cuando quiero 
+adjuntar una imagen
+
+background-position
+valor posicion x
+valor posicion y
+
+background-size 
+cover
+contain 
+
+Unidades de medida
+
+absolutas: px
+relativas: rem,porcentaje,viewport
+
+rem se usa para texto
+se hace modificando la etiqueta html
+ahi adentro le ponemos en vez de 16px, 
+62,5%. 
+esto hace que la medida de REM que se
+modifica a partir del contenedor (pantalla)
+valga 10px en vez de 16px. Esto hace que 
+sea mas facil calcular los valores de las
+cosas
+
+ejemplo
+2 rem=2o px
+3 rem=3o px
+
+GOOGLE FONT
+con iframe puedo copiar el 
+codigo de una fuente y 
+pasarlo a nuestro proyecto
+
+CSS
+{
+	font-family:"roboto"
+sans-serif;
+}
+
+HTML
+
+href="https://font.google...."
+rel="stylesheet"
+
+lo arrastro directamente de google fonts
+ahi aparece el codigo html y el css
+pego tal cual, en el html dentro del header
+y en el css dentro del body
+
+tipografias lindas
+lato,montserrat,roboto,
+https://inkbotdesign.com/google-font-combinations-mixing-typefaces/
+
+Clase 5 
+
+Div=caja vacia
+todos los elementos de html son cajas 
+en elementos de linea se ve uno al lado de otro
+en elementos de bloque, uno debajo del otro
+
+Box Model css
+propiedades de estilo 
+Content:espacio para texto o imagen
+Border:limite entre elemento y espacio externo
+Padding: separacion entre el borde
+y el contenido de la caja (margen interno)
+Margin:Separacion entre el borde y el afuera
+(espacio exterior)
+
+alto y ancho de elementos: widht y height
+vh=viewport
+overflow: (elemento mas grande que la caja)
+propiedades
+	visible
+	hidden
+	scroll
+	auto
+
+*box-sizing: border-box 
+se pone siempre para que te de el vh
+
+Bordes:
+ border-top
+ border-right
+ border-left
+ border-down
+ solido
+ punteado
+ etc
+ejemplo border: solid 20px red;
+
+tipos de Elementos
+linea o bloque 
+para cambiar el comportamiento de elementos 
+se usa DISPLAY 
+
+LA RUTA ES 
+nav ul li {
+    display: inline-block;
+}
+
+por ejemplo para cuando quiero que
+un elemento de bloque se comporte como de linea
+display.block
+display.inline
+
+display. inline-block me permite darle
+todas las propiedades a cualquiera
+
+display.none me permite ocultar
+elementos
+
+FLOAT
+mover un elemento hacia derecha o izq de su linea 
+y todo lo que viene despues se acomodara en el hueco
+que queda vacio 
+
+CLEAR
+nos sirve para acomodar los elementos que quedan
+desacomodados despues de flotar 
+lo añado como class
+
+POSITION 
+ubicar un elemento en el espacio
+permite superponer
+crear publicidades que sigan el scroll 
+hacer menu con submenu
+
+posiciones:
+top
+right
+bottom
+left
+
+position relative 
+marca el punto desde cual el elemento
+se mueve (es el centro del objeto)
+
+Position: absolute
+se mueve a partir de su padre, si su
+padre tiene position relativa. Si tiene
+position statick(por defecto) se mueve
+en funcion del body 
+
+Fixed:
+queda clavado aunque scrollees
+
+Sticky
+te sigue en el documento mientras scrolleas
+(tipo nav bar)
+
+
+Menu con submenu
+ ES EL CODIGO TAL CUAL ESTA EN
+LAS DIAPOS (Clase cinco HTML,CSS)
+
+CLASE 6
+flexbox= para estructurar el sitio mas facil 
+son muchas propiedades 
+funciona con padres e hijos 
+se usa para Responsive
+funciona en sentido x e y
+
+propiedades
+la mayoria se otorga directamente al padre
+(elemento contenedor header, main ,footer, etc)
+
+.display (el que inicia, otorga la propiedad)
+.flex-direction
+.flex-wrap
+.flex-flow
+.justify-context
+.align-items
+.align-content
+
+al elemento padre le pongo
+
+propiedad row(horizontal)
+
+.padre-flex {
+display:flex;
+flex-direction: row (horizontal);/*predeterminado*/
+}
+
+flex-direction: row-reverse 
+(fila inversa, de derecha a izq)
+
+flex-direction: column
+(fila vertical,por ej para celulares)
+
+flex-direction:column-reverse
+
+EN EL CONTENEDOR SIEMPRE PONGO DISPLAY:FLEX
+y despues flex-direction
+
+FLEX-WRAP
+controla cuando los elementos 
+colapsan o no 
+por ejemplo cuando la pag es 
+responsive
+flex-wrap: wrap 
+flex-wrap:wrap-reverse
+
+FLEX FLOW: direction+wrap
+saco las otras dos y esa sola reemplaza todo
+display:flex;
+flex-flow: row wrap;
+
+JUSTIFY CONTENT
+si tengo row mi eje principal es horizontal
+si tengo column mi eje principal es vertical
+
+la propiedad permite alinear los elementos
+segun el eje principal
+
+justify-content: flex-start;
+
+flex start alinea a la derecha
+flex end alinea a la izquierda
+
+justify content: center; alinea al centro
+
+justify-content: space-between; distribuye
+a la misma distancia <3
+
+justify-content: space-around;
+es lo mismo pero deja espacio en los margenes
+
+justify-content: space-evenly; deja IGUAL
+espacio en margenes y espacios internos
+
+TODO ESTO LO PUEDO USAR DENTRO DE NAV PARA
+CONFIGURAR EL MENU
+
+Justify-content para VERTICAL 
+
+display: flex:
+flex-direction: column;
+
+todo lo otro es igual, las mismas
+propiedades que en horizontal
+
+para combinar las dos (por ejemplo
+hacer una columna o fila
+en el centro de la
+pantalla)
+
+ALIGN-ITEMS
+flex-direction:column
+align-items
+
+flex-direction:row
+align-items
+
+propiedades (solo cuando los hijos no tienen
+propiedad de dimension definida)
+
+stretch(estira)
+flex-start(tira para arriba)
+fle-end(tira para abajo)
+center
+baseline (alinea segun contenido)
+
+ejemplo:
+
+flex-direction:row
+align-items: baseline;
+
+ALIGN-CONTENT
+se complementa con el wrap
+(cuando son mas de 1 linea de contenido)
+space between
+space evenly
+
+PROPIEDADES PARA LOS HIJOS
+order: 
+modifica el orden de aparicion
+de un elemento. recibe como valor
+numeros enteros
+
+en determinado todos los hijos tienen 
+valor O. si a uno le pongo order 1
+lo manda al final porque es mas alto que
+todos los otros que tienen 0
+
+FLEX-BASIS
+define medida de elemento
+si es en row define ancho
+si es en column define alto
+
+FLEX-GROW
+capacidad de un elemento de 
+crecer cuando en el contenedor
+hay o no espacio 
+
+todos los elementos tienen valor 0
+
+si pongo en un hijo flex-geow 1 este
+va a tomar todo el espacio que sobra
+
+FLEX-SHRINK
+es lo mismo pero con espacio faltante
+(cual se achica)
+
+
+
+
+<div class="stickyDarwin"> 
+<a href="index.html"> 
+<img class="imagenDarwin" src="img/logo_darwin.png" alt="logo_darwin"> </a> </div>
+
+_______________
+Clase 7 
+GRILLAS
+
+metodo para organizar elementos
+
+1.float
+2.flexbox
+3.grillas
+
+grid permite alinear en columnas
+y filas 
+permite mas diseños
+permite solapar,superponer
+etc
+
+grids permite posicionar
+con mas precision y mas 
+propiedades
+
+Funciona con elementos padres
+e hijos
+
+(contenedor y secciones)
+
+Propiedades de padre:
+
+SE ARRANCA APLICANDO PROPIEDAD
+
+<DISPLAY GRID>
+
+grid-template-columns: tamaño de cada columna
+grid template rows:tamaño de cafa dila 
+grid template areas: disposicion 
+grid column gap: tamaño de huecos verticales
+grid row gap: tamaño de huecos en filas
+
+.grid {
+display:grid;
+grid-template-columns: 300px 100px;
+grid template rows:40px 1oopx
+}
+
+<section class=grid>
+<div>item1</div>
+<div>item1</div>
+<div>item1</div>
+</section>
+
+con grillas se usa otra unidad 
+llamada fraction FR
+
+valor repeat: numero de veces, valor/es
+
+es para hacer elementos muy repetitivos con 
+las mismas caracteristicas
+
+grid template columns: repeat(12,1fr)
+grid template rows: repeat (23,1)
+
+para hacerlo responsive no 
+tengo que usar una medida estatica como px 
+
+tengo que usar fr o %
+
+se escribe por ejemplo 
+1fr 3fr 1fr
+100px 300px 100px
+(es lo mismo expresado en 2 formas distintas
+una responsive la otra no)
+
+Grid por areas
+
+se combinan filas y columnas
+
+se marca la estructura en html 
+
+<div id=grilla>
+<header class=border>header</header>
+
+en el css se estructura
+con grid template areas
+
+dentro de esto declaro las areas que
+quiero semanticamente
+(las mismas que puse en el html)
+
+finalmente la aplico a los hijos
+
+propiedades de hijos
+justify items
+align items
+
+para trabajar en un hijo solo
+align self
+justify self
+
+media queries 
+se hace en el css
+(reveer en la clase)
+para hacer responsive 
+se aplica en el css
+existen break points de tamaño 
+para saber cuales son las
+medidas estandar
+
+if.la pantalla mide x. se ejecuta de una forma
+else: se ejecuta de otra manera
+
+se hace a traves del meta (html)
+
+
+Clase 8
+
+Hovers
+Gradients
+
+background-image: linear-gradient
+(
+
+transformaciones:
+
+mover elementos
+escalar
+voltear y girar
+cambiar perspectiva
+
+transform:translate()
+el primero es dezp x
+el segundo es dezp y
+valores positivos van drecha/abajo
+valores negagitovs van izq/arriba
+
+rotacion:
+
+rotate()
+si es positivo rota a la dcha
+si es negativo rota a la izq
+la unidad es deg (degree)
+
+
+si especificas x o y rota solo en ese sentido 
+
+escalar:
+
+transform:scale ()
+
+el primero es el ancho (x)
+el segudno es y
+
+si pongo scale 2 se agranda al doble en igua sentido 
+
+transform: skew ()
+ parametros son angulos de deformacion
+en grados el primero indica x 
+el segundo indica y
+
+ej 
+transform: skew (2odeg 10deg);
+
+transiciones (es a partir de un evento como el hover)
+
+que propiedad y por cuantos segundos 
+
+hight:100px
+transition: heigh 2s, 
+
+div:hover {
+
+height:200px width 200px
+
+en la class pongo las caracteristicas
+originales y el tiempo (en transition)
+
+para poner tiempos diferentes
+a distintas animaciones en una
+misma class se escribe en la class
+(no hover)
+transition: scale 2s,rotate 4s;
+si es para todos el mismo
+transition:all
+
+en el hover el tamaño o cambios finales a
+a los que quiero llegar
+
+tipos de transiciones 
+hover
+focus 
+
+
+ANIMACIONES
+
+se loopea tantas veces
+como se le indique sin 
+evento (hover)
+
+el elemento es @keyframe
+
+el nombre se lo pongo yo
+y despues se lo aplico a elementos
+por ejemplo 
+@keyframe opacidad {
+}
+
+funciona con porcentaje
+
+en la clase o section pongo 
+animation-name: opacidad;
+animation-iteration-count: infinite; (se loopea)
+si pongo 3, se repite 3 veces
+
+animation-duration: 2s; (duracion)
+animation-delay: 0s; 
+
+para que aparezca y desaparezca 
+@keyframe aparecer {
+0% {
+opacity:0;
+}
+100% {opacity:1;
+}
+
+para aplicar animaciones preformateadas
+www.animate.style
+
+linkeo el CDN en el head de mi pagina
+
+(
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+despues dentro de la clase
+que quiero aplicar la animacion 
+pongo animate__animated animate__y el nombre de la animacion 
+
+SASS/SCSS
+Se usan para modificar muchos archivos
+al mismo tiempo 
+Nos permite una sintaxis mas simple 
+y rapida
+Se usa con bostrap
+SCSS es mas parecida a css
+SASS tiene otra sintaxis

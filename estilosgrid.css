@@ -1,0 +1,80 @@
+
+
+
+
+
+html {
+	font-size: 80%
+}
+
+
+div {
+	background: lightblue;
+	padding: 8px;
+}
+
+.img1
+	{
+	margin: auto;
+	object-fit: cover;
+
+}	
+
+.grid4 {
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 5px;
+	background-image: url(https://www.tsingapore.com/FileStorage/Article/Thumbnail/FASHION-BEAUTY/Fashion/2020/03/gucci-spring-summer-2020-runway-1720-3.jpg);
+	
+
+}
+
+
+
+.grid4 div:hover { 
+	border:1px solid lightgreen; 
+	background-image: url(https://www.tsingapore.com/FileStorage/Article/Thumbnail/FASHION-BEAUTY/Fashion/2020/03/gucci-spring-summer-2020-runway-1720-3.jpg);
+	
+	opacity: 0.5;
+	 }
+
+.grid2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+	background-color: white;
+}
+
+.grid2 div:hover {
+	border:5px solid violet; 
+}
+
+.grid3 {
+	display: grid;
+	gap: 5px;
+	grid-template-rows: 200px;
+	
+
+}
+
+.grid31 {
+	background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.grid31 div:hover {
+	background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.grid3 div:hover {
+	border:10px solid lightblue;
+}
+
+.grid5 {
+	display: grid;
+	grid-template-columns:repeat(5, 1fr);
+	gap: 5px;
+	background-color: white;
+	grid-template-rows: 200px;
+
+}
+

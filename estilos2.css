@@ -1,0 +1,373 @@
+html {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+    background color: white;
+}
+
+.separador {
+    z-index: 1;
+}
+
+.titulo {
+    color: #D9BACB;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.titulo2 {
+    text-align: right;
+    color: #D9BACB;
+    font-weight: bold;
+    font-size: 2rem
+}
+
+p {
+    color: grey;
+    font-size: 15px
+}
+
+.bajada {
+
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: black;
+    transform: translateY(-290px);
+}
+
+.bajada2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#SET {
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 40px;
+    text-align: center;
+    color: pink;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    animation animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.boton {
+    width: 100%;
+    background-color: #B8D3D9;
+    border: none;
+}
+
+.boton a {
+    float: left;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #B8D3D9;
+    border-radius: 10px;
+    border: none;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.dark-mode-button {
+    position: absolute;
+    top: 750px;
+    left: 20px;
+    padding: 1px;
+    background: white;
+    text-decoration: none;
+}
+
+label a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 400vh;
+    width: 98vw;
+
+    background-size: cover;
+    background-color: white;
+}
+
+.subtitulo2 {
+
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    margin-top: 0, 5%;
+
+}
+
+.contenedor-concepto {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 300vh;
+    width: 98vw;
+
+    background-size: cover;
+    background-color: white;
+}
+
+.mision {
+    margin-top: 30px;
+
+    height: 95vh;
+    width: 185vh;
+
+    background-size: cover;
+
+    background-image: url(https://media.gucci.com/content/DiaryHeroArticle_Standard_1600x812/1569492905/DiaryHeroArticle_S01-FS-DETAILS_001_Default.jpg);
+
+
+    opacity: 100;
+}
+
+.mision:hover {
+    margin-top: 30px;
+
+    height: 95vh;
+    width: 185vh;
+
+    background-size: cover;
+
+    background-image: url(https://media.gucci.com/content/DiaryHeroArticle_Standard_1600x812/1569492905/DiaryHeroArticle_S01-FS-DETAILS_001_Default.jpg);
+
+
+    opacity: 0.5;
+}
+
+.vision {
+    margin-top: 30px;
+
+    height: 95vh;
+    width: 185vh;
+
+    background-size: cover;
+
+    background-image: url(https://www.tsingapore.com/FileStorage/Article/Thumbnail/FASHION-BEAUTY/Fashion/2020/03/gucci-spring-summer-2020-runway-1720-3.jpg);
+
+    opacity: 100;
+}
+
+.vision:hover {
+    margin-top: 30px;
+
+    height: 95vh;
+    width: 185vh;
+
+    background-size: cover;
+
+    background-image: url(https://www.tsingapore.com/FileStorage/Article/Thumbnail/FASHION-BEAUTY/Fashion/2020/03/gucci-spring-summer-2020-runway-1720-3.jpg);
+
+    opacity: 0.5;
+
+}
+
+.objetivo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    height: 95vh;
+    width: 185vh;
+
+
+
+
+    background-size: cover;
+
+    background-image: url(https://s2.glbimg.com/8XAXXy246qC_SkiFbfPYTIlTlaE=/smart/e.glbimg.com/og/ed/f/original/2020/02/04/13-mfw-ss20-gucci-backstage-corey.jpg);
+
+}
+
+.objetivo:hover {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    height: 95vh;
+    width: 185vh;
+
+    background-size: cover;
+
+    background-image: url(https://s2.glbimg.com/8XAXXy246qC_SkiFbfPYTIlTlaE=/smart/e.glbimg.com/og/ed/f/original/2020/02/04/13-mfw-ss20-gucci-backstage-corey.jpg);
+
+
+    opacity: 0.5;
+
+}
+
+.textoconcepto {
+    position: absolute;
+    top: 400px;
+    left: 80px;
+    right: 80px;
+    opacity: 0;
+    letter-spacing: 2px;
+    padding: 30px;
+
+
+}
+
+.textoconcepto:hover {
+    position: absolute;
+    background-color: white;
+    top: 400px;
+    left: 80px;
+    right: 80px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    padding: 30px;
+
+
+}
+
+.textoconcepto2 {
+    position: absolute;
+    top: 1200px;
+    left: 80px;
+    right: 80px;
+    opacity: 0;
+
+}
+
+.textoconcepto2:hover {
+    position: absolute;
+    background-color: white;
+    top: 1200px;
+    left: 80px;
+    right: 80px;
+    opacity: 0.8;
+
+}
+
+.textoconcepto3 {
+    position: absolute;
+    top: 2000px;
+    left: 80px;
+    right: 80px;
+    opacity: 0;
+
+}
+
+.textoconcepto3:hover {
+    position: absolute;
+    background-color: white;
+    top: 2000px;
+    left: 80px;
+    right: 80px;
+    opacity: 0.8;
+
+}
+
+.subtitulo4 {
+
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 0.4rem;
+
+
+
+
+}
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    margin-right: 2%;
+    top: 40%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+
+}
+
+#botonmodal {
+    z-index: 100;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+article div img:hover {
+    border: 5px solid white;
+
+}
+
+main div img:hover {
+    border: 5px solid white;
+}
+
+
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ul li {
+    z-index: 100;
+    position: relative;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+header nav ul li a {
+    font-size: 0.8rem;
+}
+
+.miNavBar {
+    padding: 1rem;
+}
+
+.miNavBar ul li {
+    margin-left: 10px;
+}

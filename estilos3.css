@@ -1,0 +1,175 @@
+html {
+	font-size: 62.5%
+}
+
+body {
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	background-color:darkblue; 
+}
+
+header nav ul li a {
+
+
+
+padding: 10px;
+margin: 30px;
+color:lightgrey;
+text-decoration: none;
+font-size:1.2rem;
+
+
+
+}
+
+header nav ul {
+
+    list-style: none;
+  	text-align: center;
+  	z-index: 1;
+
+}
+
+nav ul li {
+	
+	display: inline-block;
+	position: relative;
+}
+
+ul ul{
+	position: absolute;
+	display: none;
+}
+
+ul ul li { 
+display: block;
+ }
+
+ul li:hover ul {
+	display: block;
+}
+
+
+
+
+.titulo {
+	color:white;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-left: 30px;
+
+
+
+}
+
+.titulo2{
+	text-align: right;
+	color:white;
+	font-weight: bold;
+	font-size: 2rem
+
+
+}
+
+
+p{
+	color:grey;
+	font-size: 15px
+}
+
+
+
+.bajada {
+
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 12px;
+	transform:translateY(-290px);
+	color: white;
+
+
+}
+
+.bajada2 {
+	text-align: center;
+	letter-spacing: 3px;
+	color: white;
+
+}
+
+
+#subtitulo2 {
+	letter-spacing:5px;
+	color:white;
+	background-color:black;
+}
+
+
+
+
+#SET {
+	font-size: 60px;
+	font-weight: bolder;
+	letter-spacing: 40px;
+	text-align: center;
+	color: pink;
+
+}
+
+.logo
+	{
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+	animation animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+
+}
+
+.boton {
+	width: 100%;
+	background-color: #B8D3D9;
+	border: none;
+}
+
+.boton a{
+	float: left;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 50px;
+	text-decoration: none;
+	color: white;
+	background-color: #B8D3D9;
+    border-radius: 10px;
+    border:none;
+
+}
+
+.divisor {
+	height: 0.2px;
+	border:0;
+	background-color: white;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.dark-mode-button {
+	position: absolute;
+	top: 750px;
+	left: 20px;
+	padding: 1px;
+	background: darkblue;
+	text-decoration: none;
+}
+
+label a {
+	text-decoration: none;
+	color: white;
+}
+
+
